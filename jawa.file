@@ -1,0 +1,22 @@
+// This program is supposed to manage products in a store,
+// but it contains MANY errors intentionally.
+
+import java.util.Arraylist; // wrong capitalization
+import java.util.Scanner
+
+public class StoreManager {   // class name OK
+
+    ArrayList<String> produts = new ArrayList<> // missing parentheses, typo in ArrayList
+
+    public static void main(String args) {   // wrong main signature
+        Scanner scan = new Scanner(System.in);
+
+        StoreManager manager = StoreManager; // missing 'new', wrong instantiation
+
+        manager.addProduct(123);  // should be a string, wrong type
+        manager.removeProduct("Milk");
+        manager.showProdutcs(); // wrong spelling
+    }
+
+    public void addProduct(String product)   // missing braces
+        produts.add(product;
